@@ -21,3 +21,5 @@ data/
 # Editor and temporary files
 .vscode/
 *.log
+
+rag_env/
