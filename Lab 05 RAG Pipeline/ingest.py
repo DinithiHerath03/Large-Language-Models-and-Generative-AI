@@ -22,9 +22,7 @@ COLLECTION = "university_knowledge"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# --------------------------------------------------
 # Multilingual E5 embedding integration
-# --------------------------------------------------
 
 class MultilingualE5Embeddings(Embeddings):
 
@@ -55,9 +53,7 @@ class MultilingualE5Embeddings(Embeddings):
         return embedding.tolist()
 
 
-# --------------------------------------------------
 # Select embedding model
-# --------------------------------------------------
 
 def get_embeddings(mode="multilingual"):
 
@@ -70,9 +66,7 @@ def get_embeddings(mode="multilingual"):
     return MultilingualE5Embeddings()
 
 
-# --------------------------------------------------
 # Connect to ChromaDB
-# --------------------------------------------------
 
 def get_vectorstore(mode="multilingual"):
 
@@ -91,9 +85,7 @@ def get_vectorstore(mode="multilingual"):
     )
 
 
-# --------------------------------------------------
 # Process uploaded PDF
-# --------------------------------------------------
 
 def ingest_pdf(uploaded_file, mode="multilingual"):
 
@@ -217,9 +209,7 @@ def ingest_pdf(uploaded_file, mode="multilingual"):
         raise
 
 
-# --------------------------------------------------
 # List stored PDF documents
-# --------------------------------------------------
 
 def list_documents():
 
