@@ -9,9 +9,7 @@ from ingest import (
 from rag_pipeline import ask_university
 
 
-# --------------------------------------------------
 # Page configuration
-# --------------------------------------------------
 
 st.set_page_config(
     page_title="Multilingual University AI Assistant",
@@ -29,9 +27,7 @@ st.caption(
 )
 
 
-# --------------------------------------------------
 # Sidebar: Document management
-# --------------------------------------------------
 
 with st.sidebar:
 
@@ -124,9 +120,7 @@ with st.sidebar:
         )
 
 
-# --------------------------------------------------
 # Retrieval settings
-# --------------------------------------------------
 
 st.header(
     "💬 Ask the University Assistant"
@@ -175,10 +169,7 @@ mode_mapping = {
 
 }
 
-
-# --------------------------------------------------
 # Chat interface
-# --------------------------------------------------
 
 if "messages" not in st.session_state:
 
